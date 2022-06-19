@@ -15,6 +15,7 @@ git clone https://github.com/Jingasan/react_lesson.git
 ４．依存パッケージをインストールする。
 
 ```
+cd react_lesson/01_mui_topbar
 npm install
 ```
 
