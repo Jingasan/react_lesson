@@ -1,4 +1,4 @@
-# 00_hello_world
+# 02_react_leaflet
 
 ## インストール方法
 

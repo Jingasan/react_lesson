@@ -1,4 +1,4 @@
-# 00_hello_world
+# 03_resium
 
 ## インストール方法
 
