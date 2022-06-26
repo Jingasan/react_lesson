@@ -61,14 +61,14 @@ export default function ResiumView() {
       </Entity>
       {/* 川崎市建物モデルの表示 */}
       <Cesium3DTileset
-        url="https://plateau-3dtiles-server.s3.ap-northeast-1.amazonaws.com/14_kanagawa/14130_kawasaki-shi_2020_bldg_notexture/tileset.json"
+        url="https://plateau.geospatial.jp/main/data/3d-tiles/bldg/14130_kawasaki/notexture/tileset.json"
         onReady={handleReady}
       />
       {/* 川崎市津波モデルの表示 */}
-      <Cesium3DTileset url="https://plateau-3dtiles-server.s3.ap-northeast-1.amazonaws.com/14_kanagawa/14130_kawasaki-shi_2020_tsunami_texture/tileset.json" />
+      <Cesium3DTileset url="https://plateau.geospatial.jp/main/data/3d-tiles/tsunami/14130_kawasaki/texture/tileset.json" />
       {/* 多摩川洪水モデルの表示 */}
-      <Cesium3DTileset url="https://plateau-3dtiles-server.s3.ap-northeast-1.amazonaws.com/14_kanagawa/14130_kawasaki-shi_2020_fld_texture_mlit/tamagawa_tamagawa_asakawa_ogurigawa_l1/tileset.json" />
-      <Cesium3DTileset url="https://plateau-3dtiles-server.s3.ap-northeast-1.amazonaws.com/14_kanagawa/14130_kawasaki-shi_2020_fld_texture_mlit/tamagawa_tamagawa_asakawa_ogurigawa_l2/tileset.json" />
+      <Cesium3DTileset url="https://plateau.geospatial.jp/main/data/3d-tiles/fld/14130_kawasaki/texture/tamagawa_l1/tileset.json" />
+      <Cesium3DTileset url="https://plateau.geospatial.jp/main/data/3d-tiles/fld/14130_kawasaki/texture/tamagawa_l2/tileset.json" />
     </Viewer>
   );
 }
