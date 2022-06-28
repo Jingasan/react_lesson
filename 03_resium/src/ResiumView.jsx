@@ -1,6 +1,10 @@
 import React from "react";
 import {
   Viewer,
+  Globe,
+  Sun,
+  Moon,
+  Clock,
   Entity,
   PointGraphics,
   EntityDescription,
@@ -38,6 +42,7 @@ export default function ResiumView() {
     <Viewer
       terrainProvider={terrainProvider}
       imageryProvider={imageryProvider}
+      shadows={true}
       style={{ height: "85vh" }}
       ref={(e) => {
         if (e?.cesiumElement) {
@@ -45,6 +50,10 @@ export default function ResiumView() {
         }
       }}
     >
+      <Globe enableLighting />
+      <Sun show />
+      <Moon show />
+      <Clock shouldAnimate />
       {/* 座標ポイントの表示 */}
       <Entity position={ifxPosition} name="Informatix. Inc">
         <PointGraphics pixelSize={15} color={Color.RED} />
